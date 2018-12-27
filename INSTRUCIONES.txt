@@ -1,29 +1,22 @@
 funcionamiento en produccion de tienda con AngularJS
-
 ejecutar 
 lo siguiente:
-
-
 
 Observaciones:
 este proyecto se creeo utiizando la version de angular-cli: 1.0.0-beta.28.3
 node: 10.14.2
+1. Intalar las dependcias: npm install
+2. instalar MongoDB para que pueda ejecutar el gestor de base de datos
 
-1. instalar MongoDB para que pueda ejecutar el gestor de base de datos
-
-2. Iniciar el siguiente comando  al cargar la base de datos cerrar la ventana y volver a ejecutar el cmd de la carpeta.
+3. Iniciar el siguiente comando  al cargar la base de datos cerrar la ventana y volver a ejecutar el cmd de la carpeta.
 node server/iniciarData.js
 
-
-
-3. Ejecutar el siguiente comando para correr la aplicacion 
+4. Ejecutar el siguiente comando para correr la aplicacion 
 
  ng build && node server.js
 
- 
+5. ingresar al Navegar en la URL: localhost:3000
 
-4. ingresar al Navegar en la URL: localhost:3000
-
-5. Ingresar el usuario
+6. Ingresar el usuario
 Correo: snaider@gmail.com
-Contraseña: 12345
+ContraseÃ±a: 12345
