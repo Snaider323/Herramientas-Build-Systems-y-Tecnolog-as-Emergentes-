@@ -1,0 +1,17 @@
+<div id="articuloSeleccionado">
+	<div class="cabecera">
+		<h2 class="titulo">{{articulo.nombre}}</h2>
+	</div>
+	<div class="detallearticulo">
+		<div class="detimg">
+			<img src="/assets/{{articulo.img}}">
+		</div>
+		<div class="detdatos">
+			<p>Precio: ${{articulo.precio}}</p>
+			<p>Unidades disponibles: {{articulo.stock}}</p>
+		</div>
+	</div>
+	<div>
+		<a class="volver" (click)="volver();">Volver</a>
+	</div>
+</div>

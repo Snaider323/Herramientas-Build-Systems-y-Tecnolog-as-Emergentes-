@@ -1,0 +1,32 @@
+<div id="catalogo">
+	<div class="cabecera">
+		<h2 class="titulo">Catálogo de productos</h2>
+		<div class="panelBusqueda">
+			<label for="busqueda">¿Qué estás buscando?</label>
+			<input type="text" name="busqueda" [(ngModel)]="articuloFilter.nombre" placeholder="Buscar producto">
+		</div>
+	</div>
+	<div class="articulos">
+		<div class="items">
+			<div class="articulo" *ngFor="let item of articulos | filterBy: articuloFilter">
+				<div>
+					<img src="/assets/{{item.img}}">
+				</div>
+				<div>
+					<h4>{{item.nombre}}</h4>
+					<p>Precio: ${{item.precio}}</p>
+					<p>Unidades disponibles: {{item.stock}}</p>
+				</div>
+				<div class="botones">
+					<div class="isq">
+						<a class="vermas" (click)="verMas(item);" style="cursor: pointer">Ver Más</a>
+					</div>
+					<div class="der">
+						<a class="add" (click)="addCanasta(item);" style="cursor: pointer">Añadir</a>
+						<input type="number" name="cantidad" [(ngModel)]="cantidadAdd" value="1" min="1" max="{{item.stock}}">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
